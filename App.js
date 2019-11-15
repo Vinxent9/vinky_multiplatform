@@ -3,26 +3,23 @@ import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from './comp/HomeScreen'
 import ConsoleList from './comp/ConsoleList'
 import ImageScreen from './comp/ImageScreen'
-import {createStackNavigator,createAppContainer} from 'react-navigation';
+import CounterScreen from './comp/CounterScreen'
+import ElementScreen from './comp/ElementScreen'
+
+import {createStackNavigator,createAppContainer, createDrawerNavigator} from 'react-navigation';
 
 const navigator = createStackNavigator({
   Home : HomeScreen,
   Csole : ConsoleList,
-  Img : ImageScreen
+  Img : ImageScreen,
+  Ctr : CounterScreen,
+  Elm : ElementScreen
 },
   {
     initialRouteName : 'Home',
     defaultNavigationOptions:
     {
-      headerTitle : 'Cobadlu',
-      headerStyle: {
-        backgroundColor: '#3BBA9C'
-      },
-      headerTintColor: '#fff',
-      headerTitleStyle: {
-        textAlign : 'center',
-        fontWeight: 'bold'
-      }
+      header : null
     }
   }
 );

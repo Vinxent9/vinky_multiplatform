@@ -23,6 +23,17 @@ const HomeScreen = ({navigation}) =>
                     color="#707793"
                     onPress={() => navigation.navigate('Img')}
                 />
+                <Separator />
+                <Button 
+                    title="Counter Screen"
+                    color="#707793"
+                    onPress={() => navigation.navigate('Ctr')}
+                />
+                 <Button 
+                    title="React Element"
+                    color="#707793"
+                    onPress={() => navigation.navigate('Elm')}
+                />
                 </View>
             </ImageBackground>
         </SafeAreaView>
