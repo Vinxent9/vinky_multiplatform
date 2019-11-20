@@ -5,45 +5,33 @@ import {Header, ListItem, Button, Card, Icon,SocialIcon} from 'react-native-elem
 const daftar = 
 [
     {
-        nama : 'Nintendo Switch', 
+        nama : 'Intel I7 9th Generation 3.0 Ghz Processor', 
         price : 'Rp 3.500.000',
-        src : require('../assets/switch_2.png')
+        src : require('../assets/pc_asset/intel.png')
     },
 
     {
-        nama : 'PS4 Pro Monster Hunter Edition', 
-        price : 'Rp 5.500.000',
-        src : require('../assets/ps4_mh.png')
+        nama : 'AMD Ryzen 7', 
+        price : 'Rp 2.500.000',
+        src : require('../assets/pc_asset/ryzen.png')
     },
 
     {
-        nama : 'Xbox One', 
-        price : 'Rp 4.500.000',
-        src : require('../assets/switch_small.png')
+        nama : 'Wacom Intous', 
+        price : 'Rp 1.200.000',
+        src : require('../assets/pc_asset/wacom.png')
     },
 
     {
-        nama : 'Nintendo Switch Lite', 
+        nama : 'Razer Blackwidow Ultimate Keyboard', 
         price : 'Rp 3.000.000',
-        src : require('../assets/switch_small.png')
-    },
-
-    {
-        nama : 'PS4 Standard', 
-        price : 'Rp 4.500.000',
-        src : require('../assets/switch_small.png')
-    },
-
-    {
-        nama : 'PS4 Pro', 
-        price : 'Rp 5.000.000',
-        src : require('../assets/switch_small.png')
+        src : require('../assets/pc_asset/blackwidow.png')
     }
 ];
 
 
 
-const ConsoleList = ({navigation}) => 
+const PcList = ({navigation}) => 
 {
     return(
         <View style={styles.container}>
@@ -59,7 +47,7 @@ const ConsoleList = ({navigation}) =>
                 <Card 
                     title="New Arrival"
                     titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium'}}
-                    image={require('../assets/card_console.jpg')}>
+                    image={require('../assets/pc_asset/card_pc.jpg')}>
                     <Button
                         type="outline"
                         onPress={() => navigation.navigate('Psd')}
@@ -103,4 +91,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default ConsoleList;
+export default PcList;

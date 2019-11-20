@@ -5,6 +5,8 @@ import ConsoleList from './comp/ConsoleList'
 import ImageScreen from './comp/ImageScreen'
 import CounterScreen from './comp/CounterScreen'
 import ElementScreen from './comp/ElementScreen'
+import PsDetails from './comp/PsDetail'
+import PcList from './comp/PcList'
 
 import {createStackNavigator,createAppContainer, createDrawerNavigator} from 'react-navigation';
 
@@ -13,7 +15,9 @@ const navigator = createStackNavigator({
   Csole : ConsoleList,
   Img : ImageScreen,
   Ctr : CounterScreen,
-  Elm : ElementScreen
+  Elm : ElementScreen,
+  Psd : PsDetails,
+  Pcli : PcList
 },
   {
     initialRouteName : 'Home',
