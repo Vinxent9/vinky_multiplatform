@@ -28,68 +28,53 @@ const ElementScreen = ({navigation}) => {
         <SafeAreaView style={styles.container}>
             <ScrollView>
             <Header
+                backgroundColor='#2C2F33'
                 leftComponent={{ icon: 'menu', color: '#fff' }}
                 centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
                 rightComponent={{ icon: 'home', color: '#fff' }}
             />
             
-            <Text>Test Element </Text>
        
             <Card
+                containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
                 image={require('../assets/card_utama.jpg')}>
                 <Button
-                    type="outline"
+                    type="solid"
                     onPress={() => navigation.navigate('Csole')}
-                    icon={<Icon name='shopping-basket' color='#444444' />}
-                    buttonStyle={{borderRadius: 0, marginLeft: 20, marginRight: 20, marginBottom: 0}}
+                    icon={<Icon name='shopping-basket' color='#121212' />}
+                    buttonStyle={{borderRadius: 0, marginLeft: 20, marginRight: 20, marginBottom: 0, backgroundColor:'#FFFFFF'}}
                     title='Check out our Console Store' 
-                    titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium', paddingHorizontal: 20}}
+                    titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium', paddingHorizontal: 20,color:'#121212'}}
                 />
             </Card>
             
 
             <Card 
+                containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
                 image={require('../assets/card_utama_2.jpg')}>
                 <Button
-                    type="outline"
+                    type="solid"
                     onPress={() => navigation.navigate('Pcli')}
-                    icon={<Icon name='shopping-basket' color='#444444' />}
-                    buttonStyle={{borderRadius: 0, marginLeft: 20, marginRight: 20, marginBottom: 0}}
+                    icon={<Icon name='shopping-basket' color='#121212' />}
+                    buttonStyle={{borderRadius: 0, marginLeft: 20, marginRight: 20, marginBottom: 0, backgroundColor:'#FFFFFF'}}
                     title='Check out our PC Store' 
-                    titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium', paddingHorizontal: 20}}
+                    titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium', paddingHorizontal: 20,color:'#121212'}}
                 />
             </Card>
 
             <Card 
+                containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
                 image={require('../assets/card_utama_3.jpg')}>
                 <Button
-                    type="outline"
-                    onPress={() => navigation.navigate('Csole')}
-                    icon={<Icon name='shopping-basket' color='#444444' />}
-                    buttonStyle={{borderRadius: 0, marginLeft: 20, marginRight: 20, marginBottom: 0}}
+                    type="solid"
+                    onPress={() => navigation.navigate('Gli')}
+                    icon={<Icon name='shopping-basket' color='#121212' />}
+                    buttonStyle={{borderRadius: 0, marginLeft: 20, marginRight: 20, marginBottom: 0, backgroundColor:'#FFFFFF'}}
                     title='Check out our Games' 
-                    titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium', paddingHorizontal: 20}}
+                    titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium', paddingHorizontal: 20,color:'#121212'}}
                 />
             </Card>
 
-            <Divider style={{ backgroundColor: 'grey', height:3, marginVertical: 20 }} />
-
-            <Text style={{fontSize:14, fontFamily: 'sans-serif-medium',justifyContent:'center'}}>Follow us on</Text>
-            <SocialIcon
-                title='Facebook'
-                button
-                type='facebook'
-            />
-             <SocialIcon
-                title='Twitter'
-                button
-                type='twitter'
-            />
-             <SocialIcon
-                title='Instagram'
-                button
-                type='instagram'
-            />
 
             </ScrollView>
         </SafeAreaView>
@@ -98,7 +83,8 @@ const ElementScreen = ({navigation}) => {
 
 const styles = StyleSheet.create({
 	container:{ 
-        flex : 1
+        flex : 1,
+        backgroundColor : '#121212'
     }
 });
 

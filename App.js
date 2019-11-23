@@ -7,6 +7,7 @@ import CounterScreen from './comp/CounterScreen'
 import ElementScreen from './comp/ElementScreen'
 import PsDetails from './comp/PsDetail'
 import PcList from './comp/PcList'
+import GameList from './comp/GameList'
 
 import {createStackNavigator,createAppContainer, createDrawerNavigator} from 'react-navigation';
 
@@ -17,7 +18,8 @@ const navigator = createStackNavigator({
   Ctr : CounterScreen,
   Elm : ElementScreen,
   Psd : PsDetails,
-  Pcli : PcList
+  Pcli : PcList,
+  Gli : GameList
 },
   {
     initialRouteName : 'Home',
