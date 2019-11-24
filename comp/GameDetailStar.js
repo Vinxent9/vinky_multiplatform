@@ -2,20 +2,20 @@ import React from 'react';
 import{ Text, StyleSheet, FlatList, View, SafeAreaView,ImageBackground,ScrollView,Image} from 'react-native';
 import {Header, CheckBox, Button, Card, Icon,Divider,PricingCard} from 'react-native-elements'
 
-const strand = 
+const star = 
 [
     {
-        src : require('../assets/strand1.jpg')
+        src : require('../assets/gamestore/star1.jpg')
     },
     {
-        src : require('../assets/strand2.jpg')
+        src : require('../assets/gamestore/star2.jpg')
     },
     {
-        src : require('../assets/strand3.jpg')
+        src : require('../assets/gamestore/star3.jpg')
     }
 ];
 
-const NviDetail = ({navigation}) => 
+const GameDetailStar = ({navigation}) => 
 {
     return(
         <View style={styles.container}>
@@ -28,16 +28,16 @@ const NviDetail = ({navigation}) =>
 
                 <Card 
                     containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
-                    title="PS4 Pro Death Stranding Edition Preview"
+                    title="Star Wars Jedi Fallen Order Preview"
                     titleStyle={{color:'#FFFFFF'}}
                 >
                         {
-                            strand.map((strand, i) => {
+                            star.map((star, i) => {
                                 return (
                                     <View key={i}>
                                         <Divider style={{ backgroundColor: '#99AAB5',marginVertical:20 }} />
                                         <Image
-                                            source={strand.src}
+                                            source={star.src}
                                         />
                                         
                                     </View>
@@ -51,7 +51,7 @@ const NviDetail = ({navigation}) =>
                     title="About This Game"
                     titleStyle={{color:'#FFFFFF'}}
                 >
-                    <Text style={{color:'#ffffff'}}>The LIMITED EDITION DEATH STRANDING PS4™ PRO BUNDLE includes a custom 1TB PS4™Pro system and a custom DUALSHOCK®4 wireless controller inspired by the game, and DEATH STRANDING on Blu-ray Disc.</Text>
+                    <Text style={{color:'#ffffff'}}>A galaxy-spanning adventure awaits in Star Wars Jedi: Fallen Order, a new third-person action-adventure title from Respawn Entertainment. This narratively driven, single-player game puts you in the role of a Jedi Padawan who narrowly escaped the purge of Order 66 following the events of Episode 3: Revenge of the Sith. On a quest to rebuild the Jedi Order, you must pick up the pieces of your shattered past to complete your training, develop new powerful Force abilities and master the art of the iconic lightsaber - all while staying one step ahead of the Empire and its deadly Inquisitors.</Text>
 
                 </Card>
                 
@@ -60,13 +60,24 @@ const NviDetail = ({navigation}) =>
                     title="Buy Star Wars Jedi Fallen Order"
                     titleStyle={{color:'#121212'}}
                     color="#7289DA"
-                    price="Rp. 5.000.000"
+                    price="Rp. 850.000"
                     pricingStyle={{color:'#FFFFFF'}}
-                    info={['This Package Include : ','Death Stranding Blu-ray Disc','PS4 Pro 1TB','Digital Content']}
+                    info={['Digital Standard Edition']}
                     infoStyle={{color:'#99AAB5'}}
                     button={{ title: 'Buy Now', icon: 'shopping-cart',backgroundColor:'#121212'}}
                 />
 
+                <PricingCard
+                    containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
+                    title="Buy Star Wars Jedi Fallen Order Deluxe Edition"
+                    titleStyle={{color:'#121212'}}
+                    color="#987942"
+                    price="Rp. 1.000.000"
+                    pricingStyle={{color:'#FFFFFF'}}
+                    info={['Deluxe Edition include : ','Cosmetic skin for BD-1','Digital art book','Directors Cut behind-the-scenes videos']}
+                    infoStyle={{color:'#99AAB5'}}
+                    button={{ title: 'Buy Now', icon: 'shopping-cart',backgroundColor:'#121212'}}
+                />
 
 
             </ScrollView>
@@ -81,4 +92,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default NviDetail;
+export default GameDetailStar;

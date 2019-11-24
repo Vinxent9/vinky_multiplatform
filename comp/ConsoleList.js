@@ -16,28 +16,23 @@ const daftar =
         src : require('../assets/ps4_mh.png')
     },
 
-    {
-        nama : 'Xbox One', 
-        price : 'Rp 4.500.000',
-        src : require('../assets/switch_small.png')
-    },
 
     {
         nama : 'Nintendo Switch Lite', 
         price : 'Rp 3.000.000',
-        src : require('../assets/switch_small.png')
+        src : require('../assets/switch_lite.png')
     },
 
     {
-        nama : 'PS4 Standard', 
+        nama : 'PS4 Spiderman Edition', 
         price : 'Rp 4.500.000',
-        src : require('../assets/switch_small.png')
+        src : require('../assets/ps4_sp.png')
     },
 
     {
         nama : 'PS4 Pro', 
         price : 'Rp 5.000.000',
-        src : require('../assets/switch_small.png')
+        src : require('../assets/ps4_pro.png')
     }
 ];
 
@@ -57,7 +52,7 @@ const ConsoleList = ({navigation}) =>
                 
 
                 <Card 
-                    containerStyle={{backgroundColor:'#555759', borderColor:'transparent'}}
+                    containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
                     title="New Arrival"
                     titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium',color:'#FFFFFF'}}
                     image={require('../assets/card_console.jpg')}>
@@ -65,15 +60,15 @@ const ConsoleList = ({navigation}) =>
                         type="solid"
                         onPress={() => navigation.navigate('Psd')}
                         iconRight
-                        icon={<Icon name='arrow-forward' color='#FFFFFF' />}
-                        buttonStyle={{borderRadius: 0, marginLeft: 20, marginRight: 20, marginBottom: 0, backgroundColor:'#5E7698'}}
+                        icon={<Icon name='arrow-forward' color='#121212' />}
+                        buttonStyle={{borderRadius: 0, marginLeft: 20, marginRight: 20, marginBottom: 0, backgroundColor:'#FFFFFF'}}
                         title='More details' 
-                        titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium', paddingHorizontal: 20,color:'#FFFFFF'}}
+                        titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium', paddingHorizontal: 20,color:'#121212'}}
                     />
                  </Card>
 
                  <Card
-                    containerStyle={{backgroundColor:'#555759', borderColor:'transparent'}}
+                    containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
                     title="Console List"
                     titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium',color:'#FFFFFF'}}
                     >
@@ -82,12 +77,13 @@ const ConsoleList = ({navigation}) =>
                         daftar.map((daftar, i) => {
                             return (
                                 <ListItem
-                                    containerStyle={{backgroundColor:'#555759', borderColor:'white'}}
+                                    containerStyle={{backgroundColor:'#2C2F33', borderColor:'white'}}
                                     key={i}
                                     roundAvatar
                                     title={daftar.nama}
                                     titleStyle={{color:'#FFFFFF'}}
                                     subtitle={daftar.price}
+                                    subtitleStyle={{color:'#99AAB5'}}
                                     leftAvatar={
                                         {source: daftar.src}
                                     }

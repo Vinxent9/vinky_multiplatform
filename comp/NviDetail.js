@@ -2,16 +2,13 @@ import React from 'react';
 import{ Text, StyleSheet, FlatList, View, SafeAreaView,ImageBackground,ScrollView,Image} from 'react-native';
 import {Header, CheckBox, Button, Card, Icon,Divider,PricingCard} from 'react-native-elements'
 
-const strand = 
+const rtx = 
 [
     {
-        src : require('../assets/strand1.jpg')
+        src : require('../assets/pc_asset/rtx.jpg')
     },
     {
-        src : require('../assets/strand2.jpg')
-    },
-    {
-        src : require('../assets/strand3.jpg')
+        src : require('../assets/pc_asset/rtx2.jpg')
     }
 ];
 
@@ -28,16 +25,16 @@ const NviDetail = ({navigation}) =>
 
                 <Card 
                     containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
-                    title="PS4 Pro Death Stranding Edition Preview"
+                    title="NVIDIA GeForce RTX 2080 TI Preview"
                     titleStyle={{color:'#FFFFFF'}}
                 >
                         {
-                            strand.map((strand, i) => {
+                            rtx.map((rtx, i) => {
                                 return (
                                     <View key={i}>
                                         <Divider style={{ backgroundColor: '#99AAB5',marginVertical:20 }} />
                                         <Image
-                                            source={strand.src}
+                                            source={rtx.src}
                                         />
                                         
                                     </View>
@@ -48,22 +45,20 @@ const NviDetail = ({navigation}) =>
 
                 <Card 
                     containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
-                    title="About This Game"
+                    title="About Nvidia RTX"
                     titleStyle={{color:'#FFFFFF'}}
                 >
-                    <Text style={{color:'#ffffff'}}>The LIMITED EDITION DEATH STRANDING PS4™ PRO BUNDLE includes a custom 1TB PS4™Pro system and a custom DUALSHOCK®4 wireless controller inspired by the game, and DEATH STRANDING on Blu-ray Disc.</Text>
+                    <Text style={{color:'#ffffff'}}>NVIDIA’s newest flagship graphics card is a revolution in gaming realism and performance. Its powerful NVIDIA Turing™ GPU architecture, breakthrough technologies, and 11 GB of next-gen, ultra-fast GDDR6 memory make it the world’s ultimate gaming GPU. GeForce RTX™ graphics cards are powered by the Turing GPU architecture and the all-new RTX platform. This gives you up to 6X the performance of previous-generation graphics cards and brings the power of real-time ray tracing and AI to games. </Text>
 
                 </Card>
                 
                 <PricingCard
                     containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
-                    title="Buy Star Wars Jedi Fallen Order"
+                    title="Buy Nvidia GeForce RTX 2080 TI"
                     titleStyle={{color:'#121212'}}
                     color="#7289DA"
-                    price="Rp. 5.000.000"
+                    price="$ 1.199"
                     pricingStyle={{color:'#FFFFFF'}}
-                    info={['This Package Include : ','Death Stranding Blu-ray Disc','PS4 Pro 1TB','Digital Content']}
-                    infoStyle={{color:'#99AAB5'}}
                     button={{ title: 'Buy Now', icon: 'shopping-cart',backgroundColor:'#121212'}}
                 />
 

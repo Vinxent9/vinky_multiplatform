@@ -28,10 +28,11 @@ const ElementScreen = ({navigation}) => {
         <SafeAreaView style={styles.container}>
             <ScrollView>
             <Header
+                
                 backgroundColor='#2C2F33'
-                leftComponent={{ icon: 'menu', color: '#fff' }}
-                centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
-                rightComponent={{ icon: 'home', color: '#fff' }}
+                leftComponent={{ text: 'ALPATECH' , style: { color: '#fff',fontFamily:'sans-serif-condensed' }}}
+                centerComponent={{text: 'Store Menu' , style: { color: '#fff'}}}
+                rightComponent={{ icon: 'home', color: '#fff',onPress: () => navigation.navigate('Csole') }}
             />
             
        

@@ -8,6 +8,9 @@ import ElementScreen from './comp/ElementScreen'
 import PsDetails from './comp/PsDetail'
 import PcList from './comp/PcList'
 import GameList from './comp/GameList'
+import GameDetail from './comp/GameDetail'
+import GameDetailStar from './comp/GameDetailStar'
+import NviDetail from './comp/NviDetail'
 
 import {createStackNavigator,createAppContainer, createDrawerNavigator} from 'react-navigation';
 
@@ -19,7 +22,11 @@ const navigator = createStackNavigator({
   Elm : ElementScreen,
   Psd : PsDetails,
   Pcli : PcList,
-  Gli : GameList
+  Gli : GameList,
+  Gdt : GameDetail,
+  Gst : GameDetailStar,
+  Nvi : NviDetail
+
 },
   {
     initialRouteName : 'Home',

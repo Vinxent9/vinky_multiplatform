@@ -45,31 +45,38 @@ const PcList = ({navigation}) =>
                 
 
                 <Card 
+                    containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
                     title="New Arrival"
-                    titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium'}}
+                    titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium',color:'#FFFFFF'}}
                     image={require('../assets/pc_asset/card_pc.jpg')}>
                     <Button
-                        type="outline"
-                        onPress={() => navigation.navigate('Psd')}
+                        type="solid"
+                        onPress={() => navigation.navigate('Nvi')}
                         iconRight
-                        icon={<Icon name='arrow-forward' color='#444444' />}
-                        buttonStyle={{borderRadius: 0, marginLeft: 20, marginRight: 20, marginBottom: 0}}
+                        icon={<Icon name='arrow-forward' color='#121212' />}
+                        buttonStyle={{borderRadius: 0, marginLeft: 20, marginRight: 20, marginBottom: 0,backgroundColor:'#FFFFFF'}}
                         title='More details' 
-                        titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium', paddingHorizontal: 20}}
+                        titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium', paddingHorizontal: 20,color:'#121212'}}
                     />
                  </Card>
 
                  <Card
-                    title="Console List">
+                    containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
+                    title="Hardware List"
+                    titleStyle={{color:'#FFFFFF'}}
+                    >
                     
                     {
                         daftar.map((daftar, i) => {
                             return (
                                 <ListItem
+                                    containerStyle={{backgroundColor:'#2C2F33', borderColor:'#FFFFFF'}}
                                     key={i}
                                     roundAvatar
                                     title={daftar.nama}
+                                    titleStyle={{color:'#FFFFFF'}}
                                     subtitle={daftar.price}
+                                    subtitleStyle={{color:'#99AAB5'}}
                                     leftAvatar={
                                         {source: daftar.src}
                                     }
@@ -87,7 +94,8 @@ const PcList = ({navigation}) =>
 
 const styles = StyleSheet.create({
     container : {
-        flex : 1
+        flex : 1,
+        backgroundColor:'#121212'
     }
 });
 
