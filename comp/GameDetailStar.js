@@ -21,9 +21,10 @@ const GameDetailStar = ({navigation}) =>
         <View style={styles.container}>
             <ScrollView>
                 <Header
-                    leftComponent={{ icon: 'menu', color: '#fff' }}
-                    centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
-                    rightComponent={{ icon: 'home', color: '#fff' }}
+                    backgroundColor='#2C2F33'
+                    leftComponent={{ text: 'ALPATECH' , style: { color: '#fff',fontFamily:'sans-serif-condensed' }}}
+                    centerComponent={{text: 'Game Store' , style: { color: '#fff'}}}
+                    rightComponent={{ icon: 'home', color: '#fff',onPress: () => navigation.navigate('Homenu') }}
                 />
 
                 <Card 

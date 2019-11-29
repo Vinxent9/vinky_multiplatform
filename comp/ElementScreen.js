@@ -32,7 +32,7 @@ const ElementScreen = ({navigation}) => {
                 backgroundColor='#2C2F33'
                 leftComponent={{ text: 'ALPATECH' , style: { color: '#fff',fontFamily:'sans-serif-condensed' }}}
                 centerComponent={{text: 'Store Menu' , style: { color: '#fff'}}}
-                rightComponent={{ icon: 'home', color: '#fff',onPress: () => navigation.navigate('Csole') }}
+                rightComponent={{ icon: 'home', color: '#fff',onPress: () => navigation.navigate('Homenu') }}
             />
             
        
