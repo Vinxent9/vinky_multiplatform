@@ -1,7 +1,7 @@
 import React from 'react';
 import{ Text, StyleSheet, FlatList, View, SafeAreaView,ImageBackground,ScrollView,Image} from 'react-native';
 import {Header, ListItem, Button, Card, Icon,SocialIcon} from 'react-native-elements'
-import Video from 'react-native-video'
+import {Video} from 'expo-av'
 
 const daftar = 
 [
@@ -55,7 +55,19 @@ const GameList = ({navigation}) =>
                     containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
                     title="Coming Soon"
                     titleStyle={{fontSize:14, fontFamily: 'sans-serif-medium',color:'#FFFFFF'}}
-                    image={require('../assets/gamestore/sf.jpg')}>
+                    >
+                    
+                    <Video
+                        source={require('../assets/sfchamp.mp4')}
+                        rate={1.0}
+                        volume={1.0}
+                        isMuted={false}
+                        resizeMode="cover"
+                        shouldPlay
+                        isLooping
+                        style={{ width: 300, height: 200 }}
+                    />
+
                  </Card>
 
                 <Card 

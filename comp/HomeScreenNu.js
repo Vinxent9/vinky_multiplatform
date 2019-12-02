@@ -3,8 +3,8 @@ import{ Text, StyleSheet, Button, Alert, View,TouchableOpacity,SafeAreaView,Flat
 import {Icon,Header} from 'react-native-elements';
 
 const DATA= [
-    {id:1, title: "Store", image:'home',nav:'Elm'},
-    {id:1, title: "Profile", image:'person',nav:'Gli'},
+    {id:1, title: "Store", image:'shopping-cart',nav:'Elm'},
+    {id:1, title: "Dev Profile", image:'person',nav:'Prof'},
   ];
 
 const HomeScreenNu = ({navigation}) => 

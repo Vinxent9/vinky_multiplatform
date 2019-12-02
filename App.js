@@ -9,6 +9,7 @@ import GameDetail from './comp/GameDetail'
 import GameDetailStar from './comp/GameDetailStar'
 import NviDetail from './comp/NviDetail'
 import HomeScreenNu from './comp/HomeScreenNu'
+import Profile from './comp/Profile'
 
 import {createStackNavigator,createAppContainer, createDrawerNavigator} from 'react-navigation';
 
@@ -21,7 +22,8 @@ const navigator = createStackNavigator({
   Gdt : GameDetail,
   Gst : GameDetailStar,
   Nvi : NviDetail,
-  Homenu : HomeScreenNu
+  Homenu : HomeScreenNu,
+  Prof : Profile
 
 },
   {

@@ -1,6 +1,7 @@
 import React from 'react';
 import{ Text, StyleSheet, FlatList, View, SafeAreaView,ImageBackground,ScrollView,Image} from 'react-native';
-import {Header, CheckBox, Button, Card, Icon,Divider,PricingCard} from 'react-native-elements'
+import {Header, CheckBox, Button, Card, Icon,Divider,PricingCard} from 'react-native-elements';
+import {Video} from 'expo-av';
 
 const star = 
 [
@@ -26,6 +27,26 @@ const GameDetailStar = ({navigation}) =>
                     centerComponent={{text: 'Game Store' , style: { color: '#fff'}}}
                     rightComponent={{ icon: 'home', color: '#fff',onPress: () => navigation.navigate('Homenu') }}
                 />
+
+                <Card 
+                    containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
+                    title="Star Wars Jedi Fallen Order Trailer"
+                    titleStyle={{color:'#FFFFFF'}}
+                >
+                    <Video
+                        source={require('../assets/Jedi.mp4')}
+                        rate={1.0}
+                        volume={1.0}
+                        isMuted={false}
+                        resizeMode="cover"
+                        shouldPlay
+                        isLooping
+                        style={{ width: 300, height: 200 }}
+                    />
+                </Card>
+
+
+                
 
                 <Card 
                     containerStyle={{backgroundColor:'#2C2F33', borderColor:'transparent'}}
